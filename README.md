@@ -65,3 +65,6 @@ The effect is **statistically significant** (two-sided z-test, **p = 0.0172**, 9
 **Interpretation**
 - The stronger, reassurance-led CTA likely reduced hesitation at the cart step.
 - The confidence interval suggests a **real, positive improvement** even at the lower bound (~+2 pp).
+
+**TL;DR:** Variant B increased conversion from **16.00%** to **27.33%** (**+11.33 pp**, **p = 0.0172**).
+
