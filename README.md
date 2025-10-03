@@ -55,3 +55,22 @@ The test shows whether changing the cart CTA from **“Continue”** (A) to **�
 ![Effect size CI](/ab_images/effect_size.jpg)
 
 ---
+
+## Conclusion
+
+Variant **B** (“Continue to Secure Checkout”) **outperformed** the control with a conversion rate of **27.33% vs 16.00%** — an absolute lift of **+11.33 percentage points** (**+70.8%** relative).  
+The effect is **statistically significant** (two-sided z-test, **p = 0.0172**, 95% CI **[+2.10 pp, +20.57 pp]**).  
+**Decision:** roll out **Variant B**.
+
+**Interpretation**
+- The stronger, reassurance-led CTA likely reduced hesitation at the cart step.
+- The confidence interval suggests a **real, positive improvement** even at the lower bound (~+2 pp).
+
+**Roll-out plan**
+1. Deploy **B to 100%** of traffic.
+2. **Monitor guardrails** for 2–4 weeks: overall conversion, revenue per visitor/AOV, refund rate, page speed, and support tickets.
+3. Watch for **novelty effects** and confirm the lift sustains across devices and channels.
+
+**Limitations**
+- Synthetic dataset and single-metric focus (conversion only); no segmentation or seasonality controls here.
+- No revenue or downstream retention analysis included.
