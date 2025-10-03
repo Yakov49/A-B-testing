@@ -1,7 +1,5 @@
 # A/B Test – CTA Copy on Checkout (Synthetic Case Study)
 
-![KPI Summary](kpi_summary.png)
-
 ## Introduction
 The test shows whether changing the cart CTA from **“Continue”** (A) to **“Continue to Secure Checkout”** (B) improves conversion.
 
