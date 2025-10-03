@@ -5,7 +5,7 @@ The test shows whether changing the cart CTA from **“Continue”** (A) to **�
 
 - **Dataset:** 300 users (150 per variant), binary outcome `converted` (0/1)  
 - **Primary metric:** Conversion rate (purchase completed)  
-- **Unit of randomization:** user  
+- **Unit of randomisation:** user  
 - **Test:** Two-proportion z-test, **two-sided**, α = 0.05
 
 ---
