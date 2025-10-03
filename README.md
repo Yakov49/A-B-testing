@@ -42,7 +42,7 @@ The test shows whether changing the cart CTA from **“Continue”** (A) to **�
 - **Decision:** **Ship Variant B** (statistically significant and practically meaningful)
 
 **External verification:** ABTestGuide (two-sided, 95%), A=24/150 vs B=41/150 → **p = 0.0162**, z = 2.4053, uplift **+70.83%**.  
-[A/B test guide](/ab_images/ab_testguide.JPG)
+![A/B test guide](/ab_images/ab_testguide.JPG)
 
 ---
 
