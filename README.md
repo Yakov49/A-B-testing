@@ -3,7 +3,7 @@
 ![KPI Summary](kpi_summary.png)
 
 ## Introduction
-A quick, reproducible A/B test for portfolio/GitHub. We test whether changing the cart CTA from **“Continue”** (A) to **“Continue to Secure Checkout”** (B) improves conversion.
+The test shows whether changing the cart CTA from **“Continue”** (A) to **“Continue to Secure Checkout”** (B) improves conversion.
 
 - **Dataset:** 300 users (150 per variant), binary outcome `converted` (0/1)  
 - **Primary metric:** Conversion rate (purchase completed)  
