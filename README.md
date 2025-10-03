@@ -42,44 +42,16 @@ The test shows whether changing the cart CTA from **“Continue”** (A) to **�
 - **Decision:** **Ship Variant B** (statistically significant and practically meaningful)
 
 **External verification:** ABTestGuide (two-sided, 95%), A=24/150 vs B=41/150 → **p = 0.0162**, z = 2.4053, uplift **+70.83%**.  
-*(Insert your screenshot as `abtestguide.png` or replace with a link.)*
+[A/B test guide](ab_images/ab_testguide.JPG)
 
 ---
 
 ## Visuals
 
 ### Conversion rate with 95% CI
-![Conversion rate with 95% CI](conversion_rates_ci.png)
+![Conversion rate with 95% CI](ab_images/conversion_rate.file)
 
 ### Effect size (B − A) with 95% CI
-![Effect size CI](diff_ci.png)
+![Effect size CI](ab_images/effect_sizeb.file)
 
 ---
-
-## Reproduce Locally (Python)
-
-```python
-import pandas as pd, math
-df = pd.read_csv("ab_test_data.csv")
-
-# summary
-summary = df.groupby("variant")["converted"].agg(['sum','count','mean'])
-summary.columns = ["conversions","n","rate"]
-print(summary)
-
-# two-proportion z-test (pooled SE)
-x1, n1 = summary.loc['A','conversions'], summary.loc['A','n']
-x2, n2 = summary.loc['B','conversions'], summary.loc['B','n']
-p1, p2 = x1/n1, x2/n2
-p_pool = (x1+x2)/(n1+n2)
-se = (p_pool*(1-p_pool)*(1/n1 + 1/n2))**0.5
-z  = (p2 - p1) / se
-
-from math import erf, sqrt
-p_value = 2*(1 - (1+erf(abs(z)/sqrt(2)))/2)
-
-# unpooled CI
-se_un = (p1*(1-p1)/n1 + p2*(1-p2)/n2)**0.5
-ci = ((p2-p1) - 1.96*se_un, (p2-p1) + 1.96*se_un)
-
-print({"p_A":p1, "p_B":p2, "z":z, "p_value":p_value, "CI95":ci})
