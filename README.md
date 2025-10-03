@@ -22,7 +22,7 @@ The test shows whether changing the cart CTA from **“Continue”** (A) to **�
 
 ---
 
-## Results (matches the included data)
+## Results
 
 **Top-line**
 
