@@ -12,7 +12,7 @@ The test shows whether changing the cart CTA from **“Continue”** (A) to **�
 
 ## Data
 
-**File:** `ab_test_data.csv` (300 rows)
+**File:** [ab_test_data.csv](ab_test_data.csv) (300 rows)
 
 | column     | type | description                         |
 |------------|------|-------------------------------------|
